@@ -8,26 +8,32 @@ This project applies regularized regression techniques—**Ridge** and **LASSO**
 
 ## 🧪 Workflow
 1. Load and preview the dataset
-2. Split data into:
-   - Train: 64%
-   - Validation: 16%
+2. Pre processing data: duplicate check, unvalid and missing value check, handling outlier
+3. Split data into:
+   - Pre-train: 80%
+      - Train 80%
+      - Validation 20% 
    - Test: 20%
-3. Calculate VIF for multicollinearity check
-4. Feature scaling using `StandardScaler`
-5. Train Ridge & LASSO models with cross-validation
-6. Compare models using RMSE and R²
-7. Visualize predictions vs actuals
+4. Calculate VIF for multicollinearity check
+5. Feature scaling using `StandardScaler`
+6. Train Ridge & LASSO models with cross-validation
+7. Applied on test set
+8. Compare models using RMSE, MAE, MAPE, and R²
+9. Choose the best model
 
 ## 📈 Model Performance
 | Model   | Train RMSE  | Test RMSE | R² Score |
 |---------|-------------|-----------|----------|
-| Ridge   | 4.78        | 5.16      | 74.85    |
-| LASSO   | 5.17        | 5.13      | 70.57    |
+| Ridge   | 4.47        | 3.23      | 75.32    |
+| LASSO   | 4.47        | 3.19      | 75.25    |
 
 
 ## 📁 Files
 - `Regularized Regression using Python.ipynb`: Full code
-- `boston.csv`: Dataset used
-- `Workflow.jpg`: Python code workflow
+- `Workflow.png`: Python code workflow
+
+
+
+#DataScience #MachineLearning #Regularization #RidgeRegression #LassoRegression #Modeling #PredictiveAnalytics #MLTips
 
 
